@@ -1,16 +1,15 @@
 {
-  "name": "Scheat",
+  "name": "nagara",
   "private": true,
   "scripts": {
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types",
-    "publish": "turbo run build && changeset version && changeset publish"
+    "publish": "changeset publish"
   },
   "devDependencies": {
-    "prettier": "^3.5.3",
+    "@biomejs/biome": "2.1.3",
     "turbo": "^2.5.4",
     "typescript": "5.8.2"
   },

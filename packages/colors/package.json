@@ -1,5 +1,5 @@
 {
-  "name": "@scheat/colors",
+  "name": "@nagara-ui/colors",
   "version": "0.0.1",
   "description": "",
   "main": "./dist/index.js",
@@ -7,12 +7,16 @@
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
-    "dev": "tsup src/index.ts --format cjs,esm --dts --watch"
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "jest": "^30.0.5",
+    "ts-jest": "^29.4.1",
     "tsup": "^8.5.0"
   }
 }
